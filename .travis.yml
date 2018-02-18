@@ -1,0 +1,13 @@
+language: node_js
+node_js:
+  - "stable"
+cache:
+  directories:
+    - node_modules
+deploy:
+  provider: surge
+  skip_cleanup: true
+  domain: vue-tinder.surge.sh/
+  project: .
+on:
+  branch: master
